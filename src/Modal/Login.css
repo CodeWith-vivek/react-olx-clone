@@ -1,0 +1,63 @@
+/* custom.css */
+.flowbite-control-bg-transparent {
+    background-color: transparent !important;
+}
+
+.flowbite-icon-bg-transparent {
+    background-color: transparent !important;
+}
+.flowbite-control {
+    background-color: transparent !important;
+    /* Ensure background is transparent */
+    border: none !important;
+    /* Remove any border */
+    box-shadow: none !important;
+    /* Remove box-shadow */
+}
+
+.flowbite-control:focus,
+.flowbite-control:active {
+    outline: none !important;
+    /* Remove the focus outline */
+    box-shadow: none !important;
+    /* Remove box-shadow on focus/active */
+}
+
+/* External CSS (styles.css) */
+
+/* Base style for indicator circles */
+.carousel-indicator {
+    width: 10px;
+    /* Adjust the size of the dots */
+    height: 10px;
+    border-radius: 50%;
+    /* Make it circular */
+    background-color: #e2e8f0;
+    /* Default background (e.g., bg-gray-300) */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover or active change */
+}
+
+/* Active indicator styles (e.g., bg-teal-300) */
+.carousel-indicator.active {
+    background-color:rgb(41, 81, 213);
+    /* Teal color when active (bg-teal-300) */
+}
+
+/* Indicator wrapper styles */
+.carousel-indicator-wrapper {
+    position: absolute;
+    bottom: 8px;
+    /* Position the indicators at the bottom of the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    /* Add space between the dots */
+}
+
+/* If you want to add hover effects or make adjustments, you can do that here too */
+.carousel-indicator:hover {
+    background-color: #2b6cb0;
+    /* Change the color when hovered */
+}

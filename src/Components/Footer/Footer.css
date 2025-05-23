@@ -1,0 +1,151 @@
+.footer-container {
+  background-color: #004b91; /* OLX footer blue color */
+  color: white;
+  width: 100%;
+  padding: 16px 0;
+  bottom: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-separator {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: bold;
+}
+
+.logo-circle {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  color: #004b91;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 1px;
+}
+
+.logo-tech {
+  font-weight: bold;
+}
+
+.logo-group {
+  font-size: 10px;
+  margin-left: 2px;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.olx-text {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.carwale-text:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin-right: 4px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.bikewale-text:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
+.mobility-text {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.outlook-text {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .footer-logos {
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-left {
+    order: 2;
+    justify-content: center;
+  }
+  
+  .footer-right {
+    order: 3;
+  }
+}
