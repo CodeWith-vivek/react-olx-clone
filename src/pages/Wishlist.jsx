@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Navbar";
-import Login from "../Modal/Login";
-import Sell from "../Modal/Sell";
-import Card from "../Components/Card/Card";
-import { useWishlist } from "../Context/Wishlist";
-import Nofav from "../assets/no-favorites.webp";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Login from "@/features/auth/components/Login";
+import Sell from "@/features/items/components/Sell";
+import Card from "@/components/ui/Card/Card";
+import { useWishlist } from "@/features/wishlist/context/WishlistContext";
+import Nofav from "@/assets/images/no-favorites.webp";
 import { Link } from "react-router-dom";
-import EmailLogin from "../Modal/EmailLogin";
+import EmailLogin from "@/features/auth/components/EmailLogin";
 import { useState } from "react";
 
 const Wishlist = () => {

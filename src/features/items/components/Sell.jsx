@@ -1,12 +1,12 @@
 import { Modal, ModalBody } from "flowbite-react";
-import Input from "../Components/Input/Input";
+import Input from "@/components/ui/Input/Input";
 import React, { useState, useEffect } from "react";
-import { userAuth } from "../Context/Auth";
+import { userAuth } from "@/features/auth/context/AuthContext";
 import { addDoc, collection } from "firebase/firestore";
-import { fetchFromFireStore, fireStore } from "../config/Firebase/Firebase";
-import loading from "../assets/loading.gif";
-import fileUpload from "../assets/fileUpload.svg";
-import close from "../assets/close.svg";
+import { fetchFromFireStore, fireStore } from "@/services/firebase";
+import loading from "@/assets/images/loading.gif";
+import fileUpload from "@/assets/icons/fileUpload.svg";
+import close from "@/assets/icons/close.svg";
 import { toast } from "react-toastify";
 import { doc, updateDoc } from "firebase/firestore";
 

@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../config/Firebase/Firebase";
-import arrow from "../../assets/arrow-down.svg";
-import profile_pic from "../../assets/profile_pic.png";
-import { logout } from "../../config/Firebase/Firebase";
+import { auth } from "@/services/firebase";
+import arrow from "@/assets/icons/arrow-down.svg";
+import profile_pic from "@/assets/images/profile_pic.png";
+import { logout } from "@/services/firebase";
 import { useNavigate } from "react-router-dom";
 
 const UserDropdown = (props) => {

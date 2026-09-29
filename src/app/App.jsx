@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from "./Pages/Home";
+import Home from "@/pages/Home";
 import { Route, Routes } from 'react-router-dom'
-import Details from "./Pages/Details";
-import Footer from './Components/Footer/Footer'
-import Footer2 from './Components/Footer/Footer2'
-import Wishlist from "./Pages/Wishlist";
+import Details from "@/pages/Details";
+import Footer from "@/components/layout/Footer/Footer"
+import Footer2 from "@/components/layout/Footer/Footer2"
+import Wishlist from "@/pages/Wishlist";
 import { ToastContainer } from 'react-toastify'
 
 

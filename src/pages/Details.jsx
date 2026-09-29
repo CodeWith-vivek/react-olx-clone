@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ItemsContext } from "../Context/item";
-import Navbar from "../Components/Navbar/Navbar";
-import Login from "../Modal/Login";
-import Sell from "../Modal/Sell";
-import EmailLogin from "../Modal/EmailLogin";
-import { userAuth } from "../Context/Auth";
+import { ItemsContext } from "@/features/items/context/ItemsContext";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Login from "@/features/auth/components/Login";
+import Sell from "@/features/items/components/Sell";
+import EmailLogin from "@/features/auth/components/EmailLogin";
+import { userAuth } from "@/features/auth/context/AuthContext";
 
 const Details = () => {
   const location = useLocation();
