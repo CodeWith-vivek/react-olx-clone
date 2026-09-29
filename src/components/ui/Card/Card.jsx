@@ -1,11 +1,11 @@
 import React from "react";
 
-import Favorite from "../../assets/favorite.svg";
-import FavoriteFilled from "../../assets/heart.png";
+import Favorite from "@/assets/icons/favorite.svg";
+import FavoriteFilled from "@/assets/images/heart.png";
 import { Link } from "react-router-dom";
-import { useWishlist } from "../../Context/Wishlist";
+import { useWishlist } from "@/features/wishlist/context/WishlistContext";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../config/Firebase/Firebase";
+import { auth } from "@/services/firebase";
 import { toast } from "react-toastify";
 
 const Card = ({ items, title }) => {

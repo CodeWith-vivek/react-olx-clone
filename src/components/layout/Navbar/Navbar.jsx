@@ -1,16 +1,16 @@
 
 
 import "./Navbar.css";
-import logo from "../../assets/symbol1.png";
-import search from "../../assets/search1.svg";
-import arrow from "../../assets/arrow-down.svg";
-import searchWt from "../../assets/search.svg";
+import logo from "@/assets/images/symbol1.png";
+import search from "@/assets/icons/search1.svg";
+import arrow from "@/assets/icons/arrow-down.svg";
+import searchWt from "@/assets/icons/search.svg";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../config/Firebase/Firebase";
-import addBtn from "../../assets/addButton.png";
-import Favorite from "../../assets/favorite.svg";
+import { auth } from "@/services/firebase";
+import addBtn from "@/assets/images/addButton.png";
+import Favorite from "@/assets/icons/favorite.svg";
 import { Link } from "react-router-dom";
-import UserDropdown from "../Dropdown/Dropdown"; 
+import UserDropdown from "@/components/ui/Dropdown/Dropdown"; 
 
 
 const Navbar = (props) => {

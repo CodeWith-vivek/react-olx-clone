@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { AuthProvider } from "./Context/Auth.jsx";
-import { ItemsContextProvider } from "./Context/item.jsx";
+import '@/styles/index.css'
+import App from '@/app/App.jsx'
+import { AuthProvider } from "@/features/auth/context/AuthContext";
+import { ItemsContextProvider } from "@/features/items/context/ItemsContext";
 import { BrowserRouter } from 'react-router-dom'
-import { WishlistProvider } from "./Context/Wishlist.jsx";
+import { WishlistProvider } from "@/features/wishlist/context/WishlistContext";
 
 
 createRoot(document.getElementById("root")).render(

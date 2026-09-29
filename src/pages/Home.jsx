@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from "../Components/Navbar/Navbar";
-import Login from "../Modal/Login";
-import Sell from "../Modal/Sell"
-import Card from "../Components/Card/Card";
-import { fetchFromFireStore } from "../config/Firebase/Firebase";
-import { ItemsContext } from "../Context/item";
-import Banner from "../Components/Banner/Banner";
-import EmailLogin from "../Modal/EmailLogin";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Login from "@/features/auth/components/Login";
+import Sell from "@/features/items/components/Sell"
+import Card from "@/components/ui/Card/Card";
+import { fetchFromFireStore } from "@/services/firebase";
+import { ItemsContext } from "@/features/items/context/ItemsContext";
+import Banner from "@/components/ui/Banner/Banner";
+import EmailLogin from "@/features/auth/components/EmailLogin";
 
 const Home = () => {
   const [openModal, setModal] = useState(false);

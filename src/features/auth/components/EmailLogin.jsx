@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Modal } from "flowbite-react";
-import close from "../assets/close.svg";
-import olxLogo from "../assets/symbol1.png"; 
-import { login, signup } from "../config/Firebase/Firebase"; 
+import close from "@/assets/icons/close.svg";
+import olxLogo from "@/assets/images/symbol1.png"; 
+import { login, signup } from "@/services/firebase"; 
 import { useNavigate } from "react-router-dom";
 
 const EmailLogin = ({ toggleModal, status }) => {
